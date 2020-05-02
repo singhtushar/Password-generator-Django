@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div style="text-align: Center">
+<h1 class="alert alert-warning">Generate Your Password</h1>
+<form action="{% url 'password' %}">
+    <select name="length">
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+    </select> Select length
+    <br>
+    <input type="checkbox" name="uppercase"> UpperCase
+    <br>
+    <input type="checkbox" name="lowercase"> LowerCase
+    <br>
+    <input type="checkbox" name="numbers"> Numbers
+    <br>
+    <input type="checkbox" name="special"> Special Characters
+    <br>
+    <br>
+    <input type="submit" value="Generate Password" class="btn btn-raised btn-primary">
+</form></div>
+<br>
+<br>
+<div style="font-family: Georgia;text-align: center;">
+    <a href="{% url 'abt' %}" class="btn btn-warning">ABOUT</a>
+</div>
+
+</body>
+</html>
