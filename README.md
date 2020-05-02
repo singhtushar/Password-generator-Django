@@ -1,2 +1,2 @@
 # Password-generator-Django
-This is password generator web application developed by Tushar Singh.
+This is password generator Web application developed using Django web framework, python, html, css, bootstrap.
